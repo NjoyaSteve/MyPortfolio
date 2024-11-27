@@ -10,6 +10,10 @@ app.set("view engine", "hbs")
 
 //Defining routes
 app.use('/', require('./routes/pages'))
+app.use('/about.hbs', require('./routes/pages'))
+app.use('/bizprojects.hbs', require('./routes/pages'))
+app.use('/itprojects.hbs', require('./routes/pages'))
+app.use('/CV.hbs', require('./routes/pages'))
 
 app.listen(8080, ()=>{
     console.log("Server listening on port 8080")

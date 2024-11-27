@@ -13,6 +13,11 @@
     box-sizing:border-box;
 }
 
+a{
+    text-decoration: none;
+    color: var(--extra-light);
+}
+
 img{
     width: 100%;
 }
@@ -94,17 +99,23 @@ header{
 }
 
 .portfolio{
-    background-color: var(--extra-light);
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.portfolio:hover{
+    color: var(--extra-light);
+    text-decoration: underline;
 }
 
 .cv{
     color: var(--text-light);
-    text-decoration: underline;
     transition: 0.3s;
 }
 
 .cv:hover{
     color: var(--extra-light);
+    text-decoration: underline;
 }
 
 .nav__links{
@@ -118,6 +129,7 @@ header{
     align-items: center;
     justify-content: space-around;
     z-index: 1;
+    transition: 0.3s;
 }
 
 .link{
@@ -129,6 +141,7 @@ header{
 
 .link:hover{
     color: var(--extra-light);
+    text-decoration: underline;
 }
 
 .image{
