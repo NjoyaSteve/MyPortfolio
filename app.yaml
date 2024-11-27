@@ -1,0 +1,6 @@
+# [START app.yaml]
+runtime: nodejs20
+
+vm: true
+
+# [END app.yaml]
