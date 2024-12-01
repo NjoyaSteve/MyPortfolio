@@ -10,7 +10,7 @@ router.get("/about", (req, res)=>{
     res.render("about")
 })
 
-router.get("/bizprojects.hbs", (req, res)=>{
+router.get("/bizprojects", (req, res)=>{
     res.render("bizprojects")
 })
 
