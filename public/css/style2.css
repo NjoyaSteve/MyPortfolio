@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+:root{
+    --primary-color: #000;
+    --secondary-color: #1b1d1a;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--extra-light);
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+}
+
+header{
+    display: flex;
+}
+
+.container{
+    background-color: var(--secondary-color);
+    flex:1;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*
+.container__left{
+    background-color: var(--secondary-color);
+    justify-content: flex-end;
+}
+*/
+.nav__logo{
+    position: relative;
+    justify-content: flex-start;
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    margin-left: auto;
+    font-size: 1.2 rem;
+    font-weight: 600;
+    color: var(--extra-light);
+}
+
+
+.nav__links{
+    position: relative;
+    top: 0;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.link{
+    padding: 0 .5rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.link:hover{
+    color: var(--extra-light);
+    text-decoration: underline;
+}
+
+/*------------------------------------------------*/
+.projects{
+    margin-left: 20vh;
+    min-height: 90vh;
+    font-display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.project-image-frame{
+    position: relative;
+    height: 200px;
+    width: 250px;
+    background: #fff;
+    padding: 3px;
+    border-radius: 15%;
+}
+.project-image-frame .project-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: auto;
+    margin: auto;
+    border-radius: 15%;
+}
+.project{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: var(--secondary-color);
+    height: 35vh;
+    width: 80%;
+    border-radius: 25px;
+    position: relative;
+}
+
+.project .project-content{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    position: relative;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+h1, h2, h3, h4, p{
+    color: #f3f4f6;
+}
+
+h4{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.btn{
+    position: relative;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--text-light);
+    border-radius: 10px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.btn:hover{
+    background: var(--secondary-color);
+    color: #f3f4f6;
+}
